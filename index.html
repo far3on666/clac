@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="screen">
+      <div class="row">
+        <button onclick="addToScreen('7')">7</button>
+        <button onclick="addToScreen('8')">8</button>
+        <button onclick="addToScreen('9')">9</button>
+        <button onclick="addToScreen('/')">÷</button>
+      </div>
+      <div class="row">
+        <button onclick="addToScreen('4')">4</button>
+        <button onclick="addToScreen('5')">5</button>
+        <button onclick="addToScreen('6')">6</button>
+        <button onclick="addToScreen('*')"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="row">
+        <button onclick="addToScreen('1')">1</button>
+        <button onclick="addToScreen('2')">2</button>
+        <button onclick="addToScreen('3')">3</button>
+        <button onclick="addToScreen('-')">-</button>
+      </div>
+      <div class="row">
+        <button onclick="addToScreen('0')">0</button>
+        <button onclick="addToScreen('.')">.</button>
+        <button class="equal" onclick="calculate()">=</button>
+        <button onclick="addToScreen('+')">+</button>
+      </div>
+      <div class="row">
+        <button class="delet" onclick="clearScreen()">C</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
